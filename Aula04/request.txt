@@ -1,0 +1,4 @@
+GET /
+Host: 4linux.com.br
+Agent: Firefox 7.7.7
+Token: sexta
