@@ -37,7 +37,11 @@ func executarTarefas(tarefas []agendador.Tarefa) {
 func main() {
 	fmt.Println("Inicializando o agendador de tarefa")
 
-	tarefas, _ := agendador.LerConfigAgendador("agendador.conf")
+	tarefas, err := agendador.LerConfigAgendador("agendador.conf")
+	if err != nil {
+		fmt.Println("Erro ao ler o arquivo agendardor.conf")
+		os.Exit(1)
+	}
 
 	for {
 		executarTarefas(tarefas)
