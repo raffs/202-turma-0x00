@@ -1,0 +1,19 @@
+1. Parser2, criar um map[string]map armazenar os parametros e os valores do http
+ex: https://play.golang.com/p/_OgsZd_doFY
+
+---
+
+2. Criar um utilitario que ler de um pipe (mpstat mem 60 1 | <seu_programa>), cada
+   linha e um numero, o programa retorna: Maior, Menor, Media, Mediano, Percentile -- p95
+ex: https://play.golang.com/p/Mh-V-b6q9BP
+
+---
+
+3. No log_analyser, temos um arquivo argumento de como: ./log_parser <arquivo>, adicionar
+   a leitura atraves de uma var de ambiente (LOG_ANALYSER_FILE=access.log)
+
+   1. Verifica se no os.Getenv
+   2. Depois, vai no args
+   3. Se nao, padrao: access.log
+
+ex: https://play.golang.com/p/xeM7T6vhDNz
