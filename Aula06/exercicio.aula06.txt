@@ -1,0 +1,7 @@
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+1. conv.Int("1", "2", "3") []int, err    // funcoes: func name(palavras ...string)
+
+// o nome pacote e conv
+// a funcao Intn() recebe strings, retorna uma lista de int ou error
+// Adicionar um test para a funcao conv.Int()
