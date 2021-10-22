@@ -1,0 +1,23 @@
+
+
+1. Fazer o tratamento de errors dentro `switch case command`
+
+   case "ADD":
+   	chave := linha[1] <<<< Se o cara "ADD\n", entao precisamos tratar este caso
+
+   todos os outros
+
+2. Adicionar os comandos
+
+   UPDATE -> Atualiza um valor que existe e retorna ok,
+             Se o nao existir ele retorna FAIL
+
+   GETALL -> Imprimir todas as variaveis no servidor e no cliente
+             Ou seja, fmt.Println(".....") e fmt.Fprintf(conn, "......")
+
+
+3. Transformar o endereco que agente escuta (net.Listen("tcp", ENDERECO)) como de parametro
+   de linha de argumento:
+
+      ex: ./4cached :8081
+          ./4cached :8082
