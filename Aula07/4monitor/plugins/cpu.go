@@ -24,6 +24,6 @@ func (c *Cpu) Coletar() (err error) {
 		return err
 	}
 
-	fmt.Printf("CPU: %f\n", usoCpu)
+	fmt.Printf("CPU[%s]: %f\n", c.So, usoCpu)
 	return nil
 }

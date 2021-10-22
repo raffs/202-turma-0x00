@@ -32,6 +32,7 @@ func main() {
 	// codificados no pacote ./plugins
 	daemon.Plugins = []api.Plugin{
 		&plugins.Cpu{So: "linux"},
+		&plugins.Cpu{So: "freebsd"},
 	}
 
 	switch command {
