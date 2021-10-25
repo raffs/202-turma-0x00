@@ -1,0 +1,21 @@
+1. Na nossa ferramenta de teste carga, goMeter, Definir um timeout para o cliente HTTP
+
+Exemplo: 
+```
+    client := &http.Client{
+    	CheckRedirect: redirectPolicyFunc,
+    }
+
+    resp, err := client.Get("http://example.com")
+    // ...
+```
+
+
+2. Em nossa de catalogo servico, o nosso prototipo, adicionar a funcao de DELETE um
+   servico: Ela remove todos os servicos que possui o o nome `X`.
+
+   API: DELETE /servicos
+   Payload: {"name", "webserver"}
+
+3. (Desafio) tambem e nossa ferramenta de catalogo, definir timeout's para o servidor.
+   exemplo: Utilizar o `go doc net/http` :)
